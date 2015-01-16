@@ -133,7 +133,7 @@ filled_median &lt;- median(filled_total_steps$steps)</code></pre>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 <ul>
-<li>Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.</li>
+<li>Create a new factor variable in the dataset with two levels - “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.</li>
 </ul>
 <pre class="r"><code>filled_activity$day &lt;- ifelse(
   as.POSIXlt(as.Date(filled_activity$date))$wday %% 6==0,
