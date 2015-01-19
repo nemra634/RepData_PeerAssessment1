@@ -37,8 +37,8 @@ mean_total_steps <- mean(total_steps$steps)
 median_total_steps <- median(total_steps$steps)
 ```
 
-The mean total number of steps taken per day is 1.0766189\times 10^{4} steps.  
-The median total number of steps taken per day is 10765 steps.
+The mean total number of steps taken per day is **1.0766189\times 10^{4} steps**.  
+The median total number of steps taken per day is **10765 steps**.
 
 ## What is the average daily activity pattern?
 
@@ -59,7 +59,7 @@ plot(steps~interval, data=steps_interval, type="l")
 interval_with_max_steps <- steps_interval[which.max(steps_interval$steps),]$interval
 ```
 
-The 835th interval contains the maximum number of steps.
+The **835th interval** contains the maximum number of steps.
 
 ## Imputing missing values
 
@@ -70,7 +70,7 @@ The 835th interval contains the maximum number of steps.
 total_missing <- sum(is.na(raw_data$steps))
 ```
 
-There are total 2304 rows are missing in the raw dataset.
+There are total **2304 rows** are missing in the raw dataset.
 
 - Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
@@ -105,8 +105,8 @@ filled_mean <- mean(filled_total_steps$steps)
 filled_median <- median(filled_total_steps$steps)
 ```
 
-The new mean total number of steps taken per day is 1.0766189\times 10^{4} steps.  
-The new median total number of steps taken per day is 1.0766189\times 10^{4} steps.
+The new mean total number of steps taken per day is **1.0766189\times 10^{4} steps**.  
+The new median total number of steps taken per day is **1.0766189\times 10^{4} steps**.
 
 - Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
